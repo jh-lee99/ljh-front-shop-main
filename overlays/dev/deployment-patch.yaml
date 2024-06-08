@@ -31,4 +31,4 @@ spec:
       volumes:
         - name: persistent-storage
           persistentVolumeClaim:
-            claimName: s3-claim-dev
+            claimName: s3-claim
