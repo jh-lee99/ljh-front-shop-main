@@ -2,17 +2,4 @@ apiVersion: v1
 kind: PersistentVolume
 metadata:
   name: s3-pv
-spec:
-  capacity:
-    storage: 1Gi # ignored, required
-  accessModes:
-    - ReadWriteMany # supported options: ReadWriteMany / ReadOnlyMany
-  mountOptions:
-    - allow-delete
-    - region ap-northeast-1
-    # - iocharset=utf8
-  csi:
-    driver: s3.csi.aws.com # required
-    volumeHandle: s3-csi-driver-volume
-    volumeAttributes:
-      bucketName: ljh-ladyhapburn-image
+newName: s3-pv-dev
