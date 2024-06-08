@@ -1,0 +1,5 @@
+mycert.pem
+mysecret.yaml
+SealedSecret.yaml
+SealedSecret-dev.yaml
+SealedSecret-prod.yaml
