@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: dev
 resources:
   - ../../base
+  - ljh-front-shop-main-pv.yaml
 patches:
   - path: deployment-patch.yaml
   - path: service-patch.yaml

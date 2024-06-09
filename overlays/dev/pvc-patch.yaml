@@ -9,4 +9,4 @@ spec:
   resources:
     requests:
       storage: 1Gi # ignored, required
-  volumeName: s3-pv
+  volumeName: s3-pv-dev
