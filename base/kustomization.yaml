@@ -5,6 +5,6 @@ resources:
   - ljh-front-shop-main-service.yaml
   - ljh-front-shop-main-hpa.yaml
   - ljh-front-shop-main-ingress.yaml
-  - ljh-front-shop-main-pv.yaml
+  # - ljh-front-shop-main-pv.yaml
   - ljh-front-shop-main-pvc.yaml
   - SealedSecret.yaml
