@@ -38,4 +38,4 @@ spec:
       activeService: ljh-front-shop-main-active
       previewService: ljh-front-shop-main-preview
       autoPromotionEnabled: true
-      scaleDownDelaySeconds: 30
+      # scaleDownDelaySeconds: 30

@@ -14,9 +14,6 @@ spec:
     spec:
       containers:
         - name: ljh-front-shop-main
-          envFrom:
-            - secretRef:
-                name: ljh-front-shop-main-secret
           resources:
             requests:
               cpu: 500m
