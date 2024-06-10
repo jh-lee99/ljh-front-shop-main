@@ -1,7 +1,7 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: ljh-front-shop-main
+  name: ljh-front-shop-main-active
 spec:
   ports:
     - port: 80
