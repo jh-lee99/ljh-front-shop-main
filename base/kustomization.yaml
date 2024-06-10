@@ -2,9 +2,9 @@ apiVersion: kustomize.config.k8s.io/v1beta1
 kind: Kustomization
 resources:
   - ljh-front-shop-main-deployment.yaml
-  - ljh-front-shop-main-service.yaml
+  - ljh-front-shop-main-active.yaml
+  - ljh-front-shop-main-preview.yaml
   - ljh-front-shop-main-hpa.yaml
   - ljh-front-shop-main-ingress.yaml
-  # - ljh-front-shop-main-pv.yaml
   - ljh-front-shop-main-pvc.yaml
   - SealedSecret.yaml

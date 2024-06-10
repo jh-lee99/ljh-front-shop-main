@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: argoproj.io/v1alpha1
+kind: Rollout
 metadata:
   name: ljh-front-shop-main
   namespace: default
@@ -33,3 +33,9 @@ spec:
         - name: persistent-storage
           persistentVolumeClaim:
             claimName: s3-claim
+  strategy:
+    blueGreen:
+      activeService: ljh-front-shop-main-active
+      previewService: ljh-front-shop-main-preview
+      autoPromotionEnabled: true
+      scaleDownDelaySeconds: 30

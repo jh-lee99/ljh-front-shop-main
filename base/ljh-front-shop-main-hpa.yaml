@@ -5,8 +5,8 @@ metadata:
   namespace: default
 spec:
   scaleTargetRef:
-    apiVersion: apps/v1
-    kind: Deployment
+    apiVersion: argoproj.io/v1alpha1
+    kind: Rollout
     name: ljh-front-shop-main
   minReplicas: 10
   maxReplicas: 40
