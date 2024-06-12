@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: ljh-front-shop-main
-          image: 654654416925.dkr.ecr.ap-northeast-1.amazonaws.com/ljh-front-shop-main:v1.0.6
+          image: 654654416925.dkr.ecr.ap-northeast-1.amazonaws.com/ljh-front-shop-main:v1.0.1
           envFrom:
             - secretRef:
                 name: ljh-front-shop-main-secret
