@@ -32,3 +32,8 @@ spec:
         - name: persistent-storage
           persistentVolumeClaim:
             claimName: s3-claim
+  strategy:
+    blueGreen:
+      activeService: ljh-front-shop-main-active
+      previewService: ljh-front-shop-main-preview
+      autoPromotionEnabled: true
