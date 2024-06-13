@@ -2,7 +2,6 @@ apiVersion: argoproj.io/v1alpha1
 kind: Rollout
 metadata:
   name: ljh-front-shop-main
-  namespace: default
 spec:
   replicas: 10
   selector:
@@ -37,5 +36,5 @@ spec:
     blueGreen:
       activeService: ljh-front-shop-main-active
       previewService: ljh-front-shop-main-preview
-      autoPromotionEnabled: true
+      autoPromotionEnabled: false
       # scaleDownDelaySeconds: 30
