@@ -20,10 +20,10 @@ spec:
                 name: ljh-front-shop-main-secret
           resources:
             requests:
-              cpu: 400m
+              cpu: 500m
               memory: 512Mi
             limits:
-              cpu: 400m
+              cpu: 500m
               memory: 512Mi
           volumeMounts:
             - name: persistent-storage
